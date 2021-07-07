@@ -1,0 +1,39 @@
+.generalColors {
+  color: rgb(99, 233, 208);
+  color: rgb(28, 28, 28);
+  color: rgb(45, 33, 37);
+  color: rgb(239, 86, 137);
+  color: rgb(253, 255, 239);
+  color: rgb(210, 210, 210);
+  color: rgb(240, 115, 164);
+  color: rgb(242, 182, 199);
+  color: rgb(216, 100, 137);
+  color: rgb(90, 215, 194);
+}
+
+.gradientColors {
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c0392b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8e44ad,
+    #c0392b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8e44ad,
+    #c0392b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
