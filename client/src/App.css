@@ -37,6 +37,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-access_time:before {
+  content: '\e908';
+}
 .icon-location_on:before {
   content: '\e900';
 }
