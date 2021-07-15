@@ -1,12 +1,13 @@
 import React from 'react';
 import { Logo } from '../Logo';
 import { Options } from '../Options';
+import { NavBarWrapper } from './styles';
 
 export const NavBar = () => {
   return (
-    <div>
+    <NavBarWrapper>
       <Logo />
       <Options />
-    </div>
+    </NavBarWrapper>
   );
 };
