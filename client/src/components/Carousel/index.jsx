@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NukaCarousel from 'nuka-carousel';
 import mario from '../../assets/mario_pastel.jpg';
 import tartaleta from '../../assets/tartaleta_fresa.jpg';
@@ -8,10 +8,24 @@ import universitario from '../../assets/torta_u.jpg';
 import { CarouselWrapper } from './styles';
 
 export const Carousel = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+  let posters = [mario, tartaleta, cristal, decorada, universitario];
+  let timer;
   return (
     <CarouselWrapper>
       <NukaCarousel
         autoplay
+        slideIndex={slideIndex}
+        beforeSlide={() => {
+          clearTimeout(timer);
+        }}
+        afterSlide={(slideIndex) => {
+          if (slideIndex === posters.length - 1) {
+            timer = setTimeout(() => setSlideIndex(0), 5000);
+          } else {
+            setSlideIndex(slideIndex);
+          }
+        }}
         slideWidth='600px'
         width='600px'
         height='100%'
