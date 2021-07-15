@@ -1,9 +1,10 @@
 .App {
+  background-color: rgba(10, 10, 10, 0.8);
+  /* width: 100vw; */
 }
 
 #root {
-  background-color: rgba(10, 10, 10, 0.8);
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
 }
 

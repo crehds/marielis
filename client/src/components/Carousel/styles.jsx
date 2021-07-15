@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const CarouselWrapper = styled.div`
   padding-top: 3px;
   height: calc(100vh - 161px);
-  width: 100vw;
   display: flex;
   /* border: 1px solid red; */
   justify-content: center;
@@ -13,7 +12,7 @@ export const CarouselWrapper = styled.div`
     .slider-slide {
       /* border: 1px solid blue; */
       height: 100% !important;
-      width: 100% !important;
+      /* width: 100% !important; */
       img {
         max-width: 100% !important;
         height: 100% !important;
