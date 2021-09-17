@@ -7,10 +7,8 @@ export const ArticleInfo = (props) => {
       <Title>{props.title}</Title>
       <ContentArticle>
         {props.content.map((e, i) => (
-          <Info>
-            {props.icons.length !== 0 && (
-              <i className={`icon-${props.icons[i]}`}></i>
-            )}
+          <Info href={props.links[i] ? props.links[i] : false} target='_blank'>
+            <i className={`icon-${props.icons[i]}`}></i>
             <p>{e}</p>
           </Info>
         ))}

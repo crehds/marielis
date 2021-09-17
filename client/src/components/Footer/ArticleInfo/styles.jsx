@@ -16,10 +16,19 @@ export const ContentArticle = styled.div`
   flex-direction: column;
 `;
 
-export const Info = styled.div`
+export const Info = styled.a`
   display: flex;
   margin: 4px 0;
   align-items: center;
+  text-decoration: none;
+  :hover {
+    > i {
+      color: white;
+    }
+    > p {
+      color: white;
+    }
+  }
   i {
     font-size: 20px;
     color: gray;
