@@ -2,22 +2,36 @@ import styled from 'styled-components';
 
 export const CarouselWrapper = styled.div`
   padding-top: 3px;
-  height: calc(100vh - 161px);
-  display: flex;
+  height: calc(100vh - 166px);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 100px;
+  border: 1px solid brown;
+  justify-items: cetner;
   /* border: 1px solid red; */
-  justify-content: center;
+  justify-items: center;
   .slider-list {
     /* border: 1px solid red; */
-    height: calc(100vh - 164px) !important;
+    height: calc(100vh - 185px) !important;
     .slider-slide {
       /* border: 1px solid blue; */
       height: 100% !important;
       /* width: 100% !important; */
       img {
-        max-width: 100% !important;
-        height: 100% !important;
+        /* max-width: 100% !important;
+        height: 100% !important; */
       }
     }
+  }
+  .paging-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .paging-dot > circle {
+    r: 4px;
+    cx: 8px;
+    cy: 8px;
   }
   .inicio-arrow {
     background-image: radial-gradient(
