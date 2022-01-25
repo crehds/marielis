@@ -9,8 +9,12 @@ import { CarouselWrapper } from './styles';
 import { NavBarCarousel } from './components/NavBarCarousel';
 import { SlideCarousel } from './components/SlideCarousel';
 
-export const Carousel = ({ category, setCategory }) => {
+import categories from '../../json/body.json';
+
+export const Carousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [category, setCategory] = useState('cakes');
+
   // let posters = [mario, tartaleta, cristal, decorada, universitario];
   let timer;
   console.log(category);
@@ -25,7 +29,7 @@ export const Carousel = ({ category, setCategory }) => {
           clearTimeout(timer);
         }}
         afterSlide={(slideIndex) => {
-          if (slideIndex === category.length - 1) {
+          if (slideIndex === categories[category].length - 1) {
             timer = setTimeout(() => setSlideIndex(0), 10000);
           } else {
             setSlideIndex(slideIndex);
@@ -74,10 +78,10 @@ export const Carousel = ({ category, setCategory }) => {
           </div>
         )}
       >
-        {category.map((e, i) => (
+        {categories[category].map((e, i) => (
           <SlideCarousel srcImgSlide={e.imgSrc}
             titleSlide={e.name}
-            descriptionSlide={{ ...e.description }} key={`slide-${i}`} />
+            descriptionSlide={{ ...e.description }} key={`slide-${category}-${i}`} />
         ))}
       </NukaCarousel>
     </CarouselWrapper>

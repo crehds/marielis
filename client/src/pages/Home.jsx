@@ -3,14 +3,14 @@ import { Carousel } from '../components/Carousel';
 import { useStateValue } from '../Context';
 import { Cakes } from '../components/Cakes/Cakes';
 
-import categories from '../json/body.json';
+
 
 export const Home = () => {
   const [state, { }] = useStateValue();
-  const [category, setCategory] = useState('cakes')
+
   switch (state.home) {
     case 'Carousel':
-      return <Carousel category={categories[category]} setCategory={setCategory} />;
+      return <Carousel />;
     // case 'Cakes':
     //   return <Cakes />;
     // case 'Desserts':

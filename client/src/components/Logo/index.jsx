@@ -1,7 +1,6 @@
 import React from 'react';
 import { Div, ImgWrapper, NameLogo, NameLogoWrapper } from './styles';
-import text from '../../assets/marielis_resize_off_650.png';
-import logo from '../../assets/logo_resize_206_117.png';
+import logo from '../../assets/logo_resize_206_117-removebg-preview.png';
 
 export const Logo = () => {
   return (
@@ -12,9 +11,6 @@ export const Logo = () => {
       <NameLogoWrapper>
         <NameLogo>Marielis</NameLogo>
       </NameLogoWrapper>
-      {/* <ImgWrapper>
-        <img src={text} alt='texto de marielis' />
-      </ImgWrapper> */}
     </Div>
   );
 };
