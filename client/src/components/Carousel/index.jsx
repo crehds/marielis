@@ -73,20 +73,61 @@ export const Carousel = () => {
           </div>
         )}
       >
-        {/* <div>
-          <img src={mario} alt='torta de mario' />
-        </div> */}
-        <SlideCarousel srcImgSlide={mario} />
-        <SlideCarousel srcImgSlide={tartaleta} />
-        <SlideCarousel srcImgSlide={cristal} />
-        <SlideCarousel srcImgSlide={decorada} />
-        <SlideCarousel srcImgSlide={universitario} />
-
-        {/* <img src={mario} alt='torta de mario' /> */}
-        {/* <img src={tartaleta} alt='tartaleta de fresa' />
-        <img src={cristal} alt='torta de cristal' />
-        <img src={decorada} alt='torta decorada' />
-        <img src={universitario} alt='torta de universitario' /> */}
+        <SlideCarousel
+          srcImgSlide={mario}
+          titleSlide={'torta de mario'}
+          descriptionSlide={{
+            details:
+              'Suave bizcochuelo de vainilla relleno de manjar, crema y fresas coronado con butterscotch, crema y pecanas.',
+            portions: '20 a 30 porciones',
+            measure: '28 cm diámetro',
+            price: '50.00'
+          }}
+        />
+        <SlideCarousel
+          srcImgSlide={tartaleta}
+          titleSlide={'tartaleta de fresa'}
+          descriptionSlide={{
+            details:
+              'Suave bizcochuelo de vainilla relleno de manjar, crema y fresas coronado con butterscotch, crema y pecanas.',
+            portions: '20 a 30 porciones',
+            measure: '28 cm diámetro',
+            price: '50.00'
+          }}
+        />
+        <SlideCarousel
+          srcImgSlide={cristal}
+          titleSlide={'torta con diseño de cristal'}
+          descriptionSlide={{
+            details:
+              'Suave bizcochuelo de chocolate relleno de crema chantilly, fresas y coldfil de fresa. Bañado en fudge de chocolate y decorado con rulos de chocolate, fresas y chantilly.',
+            portions: '20 a 30 porciones',
+            measure: '28 cm diámetro',
+            price: '60.00'
+          }}
+        />
+        <SlideCarousel
+          srcImgSlide={decorada}
+          titleSlide={'torta decorada'}
+          descriptionSlide={{
+            details:
+              'Suave bizcochuelo de chocolate relleno y bañado con fudge 100% cacao.',
+            portions: '20 a 30 porciones',
+            measure: '28 cm diámetro',
+            price: '60.00'
+          }}
+        />
+        <SlideCarousel
+          srcImgSlide={universitario}
+          titleSlide={'torta con diseño de universitario'}
+          descriptionSlide={{
+            details:
+              'Bizcocho con vainilla fresas, yogurt natural decorado con chantilly y fresas.',
+            portions: '10 a 15 porciones',
+            measure: '24 cm diámetro',
+            price: '40.00'
+          }}
+        />
       </NukaCarousel>
     </CarouselWrapper>
   );

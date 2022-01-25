@@ -16,10 +16,6 @@ export const SlideTitle = styled.div`
   font-size: 2rem;
 `;
 
-export const SlideDescription = styled.div`
-  border: 1px solid red;
-`;
-
 export const SlideImg = styled.div`
   border: 1px solid green;
   /* max-width: 600px !important;
@@ -27,6 +23,7 @@ export const SlideImg = styled.div`
   display: flex;
   width: 100%;
   /* max-height: 100%; */
+  padding: 20px;
   img {
     width: 100%;
     /* max-height: 100%; */

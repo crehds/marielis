@@ -1,20 +1,18 @@
 import React from 'react';
-import {
-  SlideCarouselWrapper,
-  SlideDescription,
-  SlideImg,
-  SlideTitle
-} from './styles';
+import { SlideDescription } from './components/SlideDescription';
+import { SlideTitle } from './components/SlideTitle';
+import { SlideCarouselWrapper, SlideImg } from './styles';
 
-export const SlideCarousel = ({ srcImgSlide }) => {
+export const SlideCarousel = ({
+  srcImgSlide,
+  titleSlide,
+  descriptionSlide
+}) => {
+  let title = titleSlide.toUpperCase();
   return (
     <SlideCarouselWrapper>
-      <SlideTitle>
-        <p>Este es el titulo</p>
-      </SlideTitle>
-      <SlideDescription>
-        <p>Esta es una descripcion de los ingredientes de preparacio;ón</p>
-      </SlideDescription>
+      <SlideTitle title={title} />
+      <SlideDescription description={descriptionSlide} />
       <SlideImg>
         <img src={srcImgSlide} alt='torta de mario' />
       </SlideImg>
