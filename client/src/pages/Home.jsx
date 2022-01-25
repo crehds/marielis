@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from '../components/Carousel';
 import { useStateValue } from '../Context';
 import { Cakes } from '../components/Cakes/Cakes';
 
+import categories from '../json/body.json';
+
 export const Home = () => {
-  const [state, {}] = useStateValue();
+  const [state, { }] = useStateValue();
+  const [category, setCategory] = useState('cakes')
   switch (state.home) {
     case 'Carousel':
-      return <Carousel />;
+      return <Carousel category={categories[category]} setCategory={setCategory} />;
     // case 'Cakes':
     //   return <Cakes />;
     // case 'Desserts':

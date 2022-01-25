@@ -1,0 +1,140 @@
+{
+  "cakes": [
+    {
+      "id": "1",
+      "name": "torta de mario",
+      "description": {
+        "details": "Suave bizcochuelo de vainilla relleno de manjar, crema y fresas coronado con butterscotch, crema y pecanas.",
+        "portions": "20 a 30 porciones",
+        "measure": "28 cm de diámetro",
+        "price": "50.00"
+      },
+      "imgSrc": "./assets/cakes/mario_pastel.jpg"
+    },
+    {
+      "id": "2",
+      "name": "tartaleta de fresa",
+      "description": {
+        "details": "Suave bizcochuelo de vainilla relleno de manjar, crema y fresas coronado con butterscotch, crema y pecanas.",
+        "portions": "20 a 30 porciones",
+        "measure": "28 cm de diámetro",
+        "price": "50.00"
+      },
+      "imgSrc": "./assets/cakes/tartaleta_fresa.jpg"
+    },
+    {
+      "id": "3",
+      "name": "torta con diseño de cristal",
+      "description": {
+        "details": "Suave bizcochuelo de chocolate relleno de crema chantilly, fresas y coldfil de fresa. Bañado en fudge de chocolate y decorado con rulos de chocolate, fresas y chantilly.",
+        "portions": "20 a 30 porciones",
+        "measure": "28 cm de diámetro",
+        "price": "50.00"
+      },
+      "imgSrc": "./assets/cakes/torta_cristal.jpg"
+    },
+    {
+      "id": "4",
+      "name": "torta decorada",
+      "description": {
+        "details": "Suave bizcochuelo de chocolate relleno y bañado con fudge 100% cacao.",
+        "portions": "20 a 30 porciones",
+        "measure": "28 cm de diámetro",
+        "price": "50.00"
+      },
+      "imgSrc": "./assets/cakes/torta_decorada.jpg"
+    },
+    {
+      "id": "5",
+      "name": "torta con diseño de universitario",
+      "description": {
+        "details": "Bizcocho con vainilla fresas, yogurt natural decorado con chantilly y fresas.",
+        "portions": "20 a 30 porciones",
+        "measure": "28 cm de diámetro",
+        "price": "50.00"
+      },
+      "imgSrc": "./assets/cakes/torta_u.jpg"
+    }
+  ],
+  "desserts": [
+    {
+      "id": "1",
+      "name": "cupcakes",
+      "description": {
+        "details": "pequeñas porciones de pastel para un persona",
+        "portions": "4 a 6 porciones",
+        "measure": "6 cm de diámetro",
+        "price": "9.00"
+      },
+      "imgSrc": "./assets/desserts/cupcakes.jpg"
+    },
+    {
+      "id": "2",
+      "name": "cupcakes con diseño",
+      "description": {
+        "details": "pequeñas porciones de pastel con diseños personalizados para un consumo personal",
+        "portions": "5 a 6 porciones",
+        "measure": "5 cm de diámetro",
+        "price": "10.00"
+      },
+      "imgSrc": "./assets/desserts/cupcakes_design.jpg"
+    },
+    {
+      "id": "3",
+      "name": "piononos",
+      "description": {
+        "details": "pionono de chocolate relleno con mousse de maracuyá bañado con fudge",
+        "portions": "5 a 6 porciones",
+        "measure": "5 cm de diámetro",
+        "price": "10.00"
+      },
+      "imgSrc": "./assets/desserts/piononos.jpg"
+    },
+    {
+      "id": "4",
+      "name": "tartaleta personal",
+      "description": {
+        "details": "tartaletas de fresa y/o durazno decoradas con crema de vainilla",
+        "portions": "4 a 6 porciones",
+        "measure": "5 cm de diámetro",
+        "price": "80.00"
+      },
+      "imgSrc": "./assets/desserts/tartaleta_personal.jpg"
+    }
+  ],
+  "snacks": [
+    {
+      "id": "1",
+      "name": "alfajores",
+      "description": {
+        "details": "finas capas rellenas de manjar",
+        "portions": "6 a 10 porciones",
+        "measure": "5 cm de diámetro",
+        "price": "9.00"
+      },
+      "imgSrc": "./assets/snacks/alfajores.jpg"
+    },
+    {
+      "id": "2",
+      "name": "empanadas",
+      "description": {
+        "details": "fina masa de pan rellena de una preparacion salada o dulce y horneada",
+        "portions": "6 a 10 porciones",
+        "measure": "10 cm de diámetro",
+        "price": "20.00"
+      },
+      "imgSrc": "./assets/snacks/empanadas.jpg"
+    },
+    {
+      "id": "3",
+      "name": "variados",
+      "description": {
+        "details": "mezcla de sabores para todos los gustos",
+        "portions": "depende del pedido",
+        "measure": "",
+        "price": "a cotizar"
+      },
+      "imgSrc": "./assets/snacks/variados.jpg"
+    }
+  ]
+}
