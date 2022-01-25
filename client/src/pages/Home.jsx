@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
+import { AboutUs } from '../components/AboutUs';
 import { Carousel } from '../components/Carousel';
 import { useStateValue } from '../Context';
-import { Cakes } from '../components/Cakes/Cakes';
-
-
 
 export const Home = () => {
   const [state, { }] = useStateValue();
@@ -11,8 +9,8 @@ export const Home = () => {
   switch (state.home) {
     case 'Carousel':
       return <Carousel />;
-    // case 'Cakes':
-    //   return <Cakes />;
+    case 'AboutUs':
+      return <AboutUs />;
     // case 'Desserts':
     //   return <div>Postres</div>;
     // case 'Nibbles':

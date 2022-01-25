@@ -8,17 +8,11 @@ export const Options = (props) => {
   }
   return (
     <OptionsWrapper>
-      <Option onClick={clickOption} id='Cakes'>
-        Tortas
+      <Option onClick={clickOption} id='Carousel'>
+        Productos
       </Option>
-      <Option onClick={clickOption} id='Desserts'>
-        Postres
-      </Option>
-      <Option onClick={clickOption} id='Nibbles'>
-        Bocaditos
-      </Option>
-      <Option onClick={clickOption} id='Bakery'>
-        Panaderia
+      <Option onClick={clickOption} id='AboutUs'>
+        Nosotros
       </Option>
       <Option onClick={clickOption} id='ContactUs'>
         Contactános
