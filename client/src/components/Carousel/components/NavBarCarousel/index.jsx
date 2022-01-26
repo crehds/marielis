@@ -5,31 +5,25 @@ export const NavBarCarousel = ({ setCategory }) => {
   const [option, setOption] = useState('cakes')
   function handleClick(event) {
     let id = event.target.id;
-    handleOptionSelected(id);
-    setCategory(id)
+    if (option !== id) {
+      handleOptionSelected(option);
+      setOption(id);
+    }
+    setCategory(id);
   }
 
   function handleOptionSelected(id) {
-    if (option === id) {
-      return 0
-    }
-    const optionSelected = document.getElementById(option);
-    const newOptionSelected = document.getElementById(id);
-
+    const optionSelected = document.getElementById(id);
     if (optionSelected.classList.contains('active')) {
       optionSelected.classList.remove('active');
+    } else {
+      optionSelected.classList.add('active')
     }
-
-    if (!(newOptionSelected.classList.contains('active'))) {
-      newOptionSelected.classList.add('active')
-    }
-
-    setOption(id)
   }
 
   useEffect(() => {
     handleOptionSelected(option);
-  }, [])
+  }, [option])
 
   return (
     <NavBarCarouselWrapper>
