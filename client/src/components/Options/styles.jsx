@@ -6,6 +6,7 @@ export const OptionsWrapper = styled.div`
   justify-content: space-around;
   margin-top: 3px;
   max-height: 30px;
+  cursor: pointer;
 `;
 
 export const Option = styled.div`
@@ -22,4 +23,10 @@ export const Option = styled.div`
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 500;
+  transition: .8s;
+  :hover {
+    border: none;
+    background-image: linear-gradient( 110.6deg,  rgba(239,86,137,.7) 7%, rgba(253,255,239,1) 47.7%, rgba(90,215,194,.7) 100.6% );
+    color: rgba(18,18,18,.85);
+  }
 `;

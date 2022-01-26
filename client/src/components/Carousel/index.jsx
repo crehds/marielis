@@ -17,7 +17,7 @@ export const Carousel = () => {
 
   // let posters = [mario, tartaleta, cristal, decorada, universitario];
   let timer;
-  console.log(category);
+  // console.log(category);
   return (
     <CarouselWrapper>
       <NavBarCarousel setCategory={setCategory} />

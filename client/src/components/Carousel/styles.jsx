@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const CarouselWrapper = styled.div`
   padding-top: 3px;
+  padding-left: 5px;
   height: calc(100vh - 166px);
   display: grid;
   grid-template-columns: auto 1fr;
