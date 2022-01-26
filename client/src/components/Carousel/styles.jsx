@@ -6,7 +6,7 @@ export const CarouselWrapper = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
   grid-column-gap: 100px;
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   justify-items: cetner;
   /* border: 1px solid red; */
   justify-items: center;

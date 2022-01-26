@@ -7,6 +7,10 @@ export const SlideDescriptionWrapper = styled.div`
   flex-direction: column;
   padding: 6px;
   padding-top: 12px;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
   > p:nth-child(1) {
     text-align: justify;
   }

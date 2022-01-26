@@ -9,14 +9,14 @@ export const NavBarCarousel = ({ setCategory }) => {
   }
   return (
     <NavBarCarouselWrapper>
-      <OptionCarousel onClick={handleClick}>
-        <p id='cakes'>Tortas</p>
+      <OptionCarousel id='cakes' onClick={handleClick}>
+        <p >Tortas</p>
       </OptionCarousel>
-      <OptionCarousel onClick={handleClick}>
-        <p id='desserts'>Postres</p>
+      <OptionCarousel id='desserts' onClick={handleClick}>
+        <p>Postres</p>
       </OptionCarousel>
-      <OptionCarousel onClick={handleClick}>
-        <p id='snacks'>Bocaditos</p>
+      <OptionCarousel id='snacks' onClick={handleClick}>
+        <p >Bocaditos</p>
       </OptionCarousel>
     </NavBarCarouselWrapper>
   );
