@@ -14,28 +14,23 @@ export const OptionCarousel = styled.div`
   font-size: 17px;
   color: white;
   display: flex;
-  text-align: center;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
   box-shadow: 0 0 3px 1px rgba(2,2,2,.5);
+  padding: 0px 35px;
+  font-weight: bold;
   :hover {
     background: rgba(99,233,208,.6);
-    > p {
-      color: rgba(199, 38, 102, 0.781);
-    }
+    color: rgba(199, 38, 102, 0.781);
   }
-  p {
-    padding: 0px 35px;
-    width: 100%;
-    font-weight: bold;
+  
+  &&.active {
+    background: rgba(99,233,208,.6);
+    color: rgba(199, 38, 102, 0.781);
   }
   :active {
       border: 2px solid rgba(120, 245, 222, 0.9);
     }
-  &&.active {
-    background: rgba(99,233,208,.6);
-    > p {
-      color: rgba(199, 38, 102, 0.781);
-    }
-  }
+
 `;

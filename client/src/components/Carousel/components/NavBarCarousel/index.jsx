@@ -6,8 +6,9 @@ import { useOptionActive } from '../../../../hooks/useOptionActive';
 export const NavBarCarousel = ({ setCategory }) => {
   const [optionActive, setOption] = useOptionActive({ navbar: 'navbar_carousel', option: 'cakes' })
   function handleClick(event) {
-    console.log(event.target);
     let id = event.target.id;
+    console.log(id);
+    if (!id) return 0;
     if (optionActive.option !== id) {
       setOption((prevState) => (
         {
@@ -17,18 +18,20 @@ export const NavBarCarousel = ({ setCategory }) => {
       ));
     }
     setCategory(id);
+
+
   }
 
   return (
     <NavBarCarouselWrapper id='navbar_carousel'>
       <OptionCarousel id='cakes' onClick={handleClick}>
-        <p >Tortas</p>
+        Tortas
       </OptionCarousel>
       <OptionCarousel id='desserts' onClick={handleClick}>
-        <p>Postres</p>
+        Postres
       </OptionCarousel>
       <OptionCarousel id='snacks' onClick={handleClick}>
-        <p >Bocaditos</p>
+        Bocaditos
       </OptionCarousel>
     </NavBarCarouselWrapper>
   );

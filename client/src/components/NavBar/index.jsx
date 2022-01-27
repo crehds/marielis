@@ -24,19 +24,6 @@ export const NavBar = () => {
     });
   }
 
-  // function handleOptionSelected(optionId) {
-  //   const optionSelected = document.getElementById(optionId);
-  //   if (optionSelected.classList.contains('active')) {
-  //     optionSelected.classList.remove('active');
-  //   } else {
-  //     optionSelected.classList.add('active')
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   handleOptionSelected(state.home);
-  // }, [state.home])
-
   return (
     <NavBarWrapper>
       <Logo />
