@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContactUsWrapper = styled.div`
+export const MapAndSocialMediaWrapper = styled.div`
   margin: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -8,7 +8,7 @@ export const ContactUsWrapper = styled.div`
   height: calc(100vh - 173px);
 `
 
-export const ContactUsMap = styled.div`
+export const MapAndSocialMediaMap = styled.div`
   display:grid ;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
@@ -57,9 +57,4 @@ export const DetailsMap = styled.div`
   i {
     font-size: 35px;
   }
-`
-
-export const ContactUsSocialMedia = styled.div`
-  display: grid;
-  border: 1px solid red;
 `

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutUsWrapper = styled.div`
+export const MisionVissionObjectivesWrapper = styled.div`
   border: 1px solid gray;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr;

@@ -7,7 +7,6 @@ export const NavBarCarousel = ({ setCategory }) => {
   const [optionActive, setOption] = useOptionActive({ navbar: 'navbar_carousel', option: 'cakes' })
   function handleClick(event) {
     let id = event.target.id;
-    console.log(id);
     if (!id) return 0;
     if (optionActive.option !== id) {
       setOption((prevState) => (
@@ -18,8 +17,6 @@ export const NavBarCarousel = ({ setCategory }) => {
       ));
     }
     setCategory(id);
-
-
   }
 
   return (
