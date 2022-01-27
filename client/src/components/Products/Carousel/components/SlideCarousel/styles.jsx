@@ -3,12 +3,17 @@ import styled from 'styled-components';
 export const SlideCarouselWrapper = styled.div`
   /* border: 3px solid white; */
   display: grid;
-  background: rgba(255, 255, 255, 0.949);
+  background: rgba(78, 163, 184, 0.9);
+  border: 2px solid green;
   height: 100%;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto calc(100vh - 250px);
   text-align: center;
   border-radius: 10px;
+  border-top: 2px inset rgba(57, 174, 190, 0.9);
+  border-left: 2px inset rgba(57, 174, 190, 0.9);
+  border-right: 2px outset rgba(57, 174, 190, 0.9);
+  border-bottom: 2px outset rgba(57, 174, 190, 0.9);
 `;
 
 export const SlideTitle = styled.div`

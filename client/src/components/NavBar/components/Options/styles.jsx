@@ -26,11 +26,12 @@ export const Option = styled.div`
   transition: .8s;
   :hover {
     border: none;
-    background-image: linear-gradient( 110.6deg,  rgba(239,86,137,.7) 7%, rgba(253,255,239,1) 47.7%, rgba(90,215,194,.7) 100.6% );
+    background-image: linear-gradient( 110.6deg,  rgba(243, 134, 170, 0.698) 7%, rgba(253,255,239,1) 47.7%, rgba(128, 221, 205, 0.698) 100.6% );
     color: rgba(18,18,18,.85);
   }
   &&.active{
-    background-image: linear-gradient( 110.6deg,  rgba(239,86,137,.7) 7%, rgba(253,255,239,1) 47.7%, rgba(90,215,194,.7) 100.6% );
+    border:none;
+    background-image: linear-gradient( 110.6deg,  rgba(243, 134, 170, 0.698) 7%, rgba(253,255,239,1) 47.7%, rgba(128, 221, 205, 0.698) 100.6% );
     color: rgba(18,18,18,.85);
   }
 `;

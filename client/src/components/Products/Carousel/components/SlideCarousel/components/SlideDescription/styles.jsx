@@ -11,6 +11,7 @@ export const SlideDescriptionWrapper = styled.div`
   font-style: italic;
   font-weight: bold;
   font-size: 18px;
+  color: rgba(235,235,235,.85);
   > p:nth-child(1) {
     text-align: justify;
   }
@@ -23,12 +24,14 @@ export const SlidePrice = styled.div`
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
-    rgba(226, 37, 37, 1) 0%,
-    rgba(211, 49, 49, 1) 82.8%
-  );
-  background-clip: text;
+    rgb(245, 19, 19) 0%,
+    rgb(238, 45, 45) 82.8%
+  ); */
+  /* background-image: rgba(245,19,19,.9); */
+  /* background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
+  color: rgba(243, 2, 2, 0.898);
 `;

@@ -35,11 +35,17 @@ export const CarouselWrapper = styled.div`
     cy: 8px;
   }
   .inicio-arrow {
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
       circle farthest-corner at 12.3% 19.3%,
       rgba(85, 88, 218, 1) 0%,
       rgba(95, 209, 249, 1) 100.2%
+    ); */
+    background-image: radial-gradient(
+      circle farthest-corner at 12.3% 19.3%,
+      rgba(128, 221, 205, 0.698) 0%,
+      rgba(14, 138, 117, 0.698) 100.2%
     );
+    
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

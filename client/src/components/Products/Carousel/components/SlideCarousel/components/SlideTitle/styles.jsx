@@ -8,6 +8,7 @@ export const SlideTitleWrapper = styled.div`
   font-weight: 900;
   font-style: italic;
   align-items: center;
+  color: rgba(202, 60, 117, 0.8);
   p {
     width: 100%;
   }
