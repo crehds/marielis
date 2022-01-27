@@ -1,32 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { NavBarCarouselWrapper, OptionCarousel } from './styles';
 
+import { useOptionActive } from '../../../../hooks/useOptionActive';
+
 export const NavBarCarousel = ({ setCategory }) => {
-  const [option, setOption] = useState('cakes')
+  const [optionActive, setOption] = useOptionActive({ navbar: 'navbar_carousel', option: 'cakes' })
   function handleClick(event) {
+    console.log(event.target);
     let id = event.target.id;
-    if (option !== id) {
-      handleOptionSelected(option);
-      setOption(id);
+    if (optionActive.option !== id) {
+      setOption((prevState) => (
+        {
+          ...prevState,
+          option: id,
+        }
+      ));
     }
     setCategory(id);
   }
 
-  function handleOptionSelected(id) {
-    const optionSelected = document.getElementById(id);
-    if (optionSelected.classList.contains('active')) {
-      optionSelected.classList.remove('active');
-    } else {
-      optionSelected.classList.add('active')
-    }
-  }
-
-  useEffect(() => {
-    handleOptionSelected(option);
-  }, [option])
-
   return (
-    <NavBarCarouselWrapper>
+    <NavBarCarouselWrapper id='navbar_carousel'>
       <OptionCarousel id='cakes' onClick={handleClick}>
         <p >Tortas</p>
       </OptionCarousel>

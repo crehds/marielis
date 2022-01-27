@@ -7,7 +7,7 @@ export const Options = (props) => {
     props.optionHandler(id);
   }
   return (
-    <OptionsWrapper>
+    <OptionsWrapper id='navbar_home'>
       <Option onClick={clickOption} id='Carousel'>
         Productos
       </Option>
