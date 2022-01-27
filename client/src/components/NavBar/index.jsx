@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { Logo } from '../Logo';
-import { Options } from '../Options';
+import React from 'react';
+import { Logo } from './components/Logo';
+import { Options } from './components/Options';
 import { NavBarWrapper } from './styles';
 import { useStateValue } from '../../Context';
 import { useOptionActive } from '../../hooks/useOptionActive';
