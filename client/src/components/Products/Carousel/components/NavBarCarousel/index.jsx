@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavBarCarouselWrapper, OptionCarousel } from './styles';
 
-import { useOptionActive } from '../../../../hooks/useOptionActive';
+import { useOptionActive } from '../../../../../hooks/useOptionActive';
 
 export const NavBarCarousel = ({ setCategory }) => {
   const [optionActive, setOption] = useOptionActive({ navbar: 'navbar_carousel', option: 'cakes' })

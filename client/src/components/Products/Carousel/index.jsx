@@ -9,7 +9,7 @@ import { CarouselWrapper } from './styles';
 import { NavBarCarousel } from './components/NavBarCarousel';
 import { SlideCarousel } from './components/SlideCarousel';
 
-import categories from '../../json/body.json';
+import categories from '../../../json/body.json';
 
 export const Carousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);

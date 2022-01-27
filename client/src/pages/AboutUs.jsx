@@ -1,6 +1,6 @@
 import React from 'react';
-import { MisionVissionObjectives } from '../components/MissionVissionObjectives';
+import { MissionVissionObjectives } from '../components/AboutUs/MissionVissionObjectives';
 
 export const AboutUs = () => {
-  return <MisionVissionObjectives />
+  return <MissionVissionObjectives />
 }
