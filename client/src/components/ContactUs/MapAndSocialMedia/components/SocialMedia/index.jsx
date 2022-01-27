@@ -5,10 +5,10 @@ export const SocialMedia = () => {
   return (
     <SocialMediaWrapper>
       <Requirements>
-        <h2>Tener en cuenta</h2>
+        <h2>IMPORTANTE:</h2>
         <br />
-        <p>- Pedidos con una semana de anticipación</p>
-        <p>- Contamos con delivery propio(Costo adicional)</p>
+        <p>- Pedidos con una semana de anticipación.</p>
+        <p>- Contamos con delivery propio. (costo adicional)</p>
       </Requirements>
       <Links>
         <a rel='noreferrer' href="https://www.facebook.com/Marielis-112533103834672" target='_blank' >

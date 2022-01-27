@@ -45,6 +45,7 @@ export const ArticleParagraph = styled.p`
   padding: 15px;
   font-family: 'Roboto';
   animation: ${opacity} .6s linear 1;
+  font-size: 1rem;
 `
 
 export const ArticleImg = styled.div`

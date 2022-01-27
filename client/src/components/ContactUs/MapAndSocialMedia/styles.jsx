@@ -38,7 +38,7 @@ export const DetailsMap = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding: 9rem 0px;
+  padding: 7rem 0px;
   a {
     display: flex;
     align-items: center;
@@ -46,6 +46,14 @@ export const DetailsMap = styled.div`
     text-decoration: none;
     color:white;
     width: 100%;
+    :hover {
+      > i {
+      color: rgb(230, 52, 52);
+    }
+    }
+    p {
+      font-size: 1.3rem;
+    }
   }
   div {
     display: flex;
@@ -53,6 +61,9 @@ export const DetailsMap = styled.div`
     justify-content: space-around;
     color: white;
     width: 100%;
+    p{
+      font-size: 1.1rem;
+    }
   }
   i {
     font-size: 35px;

@@ -11,11 +11,20 @@ export const Requirements = styled.div`
   justify-content: center;
   /* align-items: center; */
   flex-direction: column;
+  border: 3px outset rgba(243, 115, 115, 0.8);
+  border-bottom: 3px inset rgba(243, 115, 115, 0.8);
+  border-right: 3px inset rgba(243, 115, 115, 0.8);
+  border-radius: 6px;
+  margin: 1.5rem;
   h2 {
     text-align: center;
+    color: rgba(241, 103, 103, 0.9);
+    font-size: 1.8rem;
   }
   p {
     padding: 0px 5rem;
+    color: rgba(243, 115, 115, 0.8);
+    font-size: 1.1rem;
   }
 `
 
@@ -24,13 +33,17 @@ export const Links = styled.div`
   grid-template-rows: 1fr 1fr 1fr 1fr;
   padding: 20px;
   font-size: 25px;
-  color:white;
+  color:rgba(210,210,210,.7);
   a {
     display: grid;
     grid-template-columns: 1fr 4fr;
     text-decoration: none;
-    color:white;
+    /* color:white; */
+    color:rgba(210,210,210,.7);
     text-align: center;
+    :hover {
+      color:rgba(74, 193, 214, 0.95);
+      }  
   }
   div {
     display: grid;
