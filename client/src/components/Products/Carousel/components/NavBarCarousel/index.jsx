@@ -4,17 +4,18 @@ import { NavBarCarouselWrapper, OptionCarousel } from './styles';
 import { useOptionActive } from '../../../../../hooks/useOptionActive';
 
 export const NavBarCarousel = ({ setCategory }) => {
-  const [optionActive, setOption] = useOptionActive({ navbar: 'navbar_carousel', option: 'cakes' })
+  const [optionActive, setOption] = useOptionActive({
+    navbar: 'navbar_carousel',
+    option: 'cakes'
+  });
   function handleClick(event) {
     let id = event.target.id;
     if (!id) return 0;
     if (optionActive.option !== id) {
-      setOption((prevState) => (
-        {
-          ...prevState,
-          option: id,
-        }
-      ));
+      setOption((prevState) => ({
+        ...prevState,
+        option: id
+      }));
     }
     setCategory(id);
   }

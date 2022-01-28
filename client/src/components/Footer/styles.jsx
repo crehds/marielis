@@ -29,16 +29,26 @@ export const DetailFooter = styled.div`
     justify-content: space-around;
     align-items: center;
     a {
-    text-decoration: none;
-    color: gray;
-     i {
-       font-size: 50px;
-     }
+      text-decoration: none;
+      color: gray;
+      :hover {
+        color: white;
+      }
+      i {
+        font-size: 50px;
+      }
     }
   }
   span {
+    color: rgba(230, 230, 230, 0.8);
     font-size: 14px;
-    color:rgba(250,250,250,0.5);
+    a {
+      text-decoration: none;
+      color: rgba(250, 250, 250, 0.5);
+      font-size: 14px;
+      :hover {
+        color: rgba(250, 250, 250, 0.95);
+      }
+    }
   }
-  
-`
+`;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MapAndSocialMediaWrapper = styled.div`
   margin: 5px;
@@ -6,14 +6,14 @@ export const MapAndSocialMediaWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 5px;
   height: calc(100vh - 173px);
-`
+`;
 
 export const MapAndSocialMediaMap = styled.div`
-  display:grid ;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
-  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.6);
-`
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.6);
+`;
 
 export const MapWrapper = styled.div`
   overflow: hidden;
@@ -23,7 +23,7 @@ export const MapWrapper = styled.div`
   /* margin: 20px; */
   iframe {
     left: 0;
-    top:0;
+    top: 0;
     /* padding: 20px; */
     /* border: 5px solid blue; */
     border-radius: 8px;
@@ -31,7 +31,7 @@ export const MapWrapper = styled.div`
     width: 100%;
     position: absolute;
   }
-`
+`;
 
 export const DetailsMap = styled.div`
   display: flex;
@@ -44,12 +44,12 @@ export const DetailsMap = styled.div`
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
-    color:white;
+    color: white;
     width: 100%;
     :hover {
       > i {
-      color: rgb(230, 52, 52);
-    }
+        color: rgb(230, 52, 52);
+      }
     }
     p {
       font-size: 1.3rem;
@@ -61,11 +61,11 @@ export const DetailsMap = styled.div`
     justify-content: space-around;
     color: white;
     width: 100%;
-    p{
+    p {
       font-size: 1.1rem;
     }
   }
   i {
     font-size: 35px;
   }
-`
+`;

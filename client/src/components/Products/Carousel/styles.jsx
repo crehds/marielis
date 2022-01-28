@@ -45,7 +45,7 @@ export const CarouselWrapper = styled.div`
       rgba(128, 221, 205, 0.698) 0%,
       rgba(14, 138, 117, 0.698) 100.2%
     );
-    
+
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

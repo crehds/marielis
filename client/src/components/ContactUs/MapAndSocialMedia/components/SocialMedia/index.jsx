@@ -11,17 +11,31 @@ export const SocialMedia = () => {
         <p>- Contamos con delivery propio. (costo adicional)</p>
       </Requirements>
       <Links>
-        <a rel='noreferrer' href="https://www.facebook.com/Marielis-112533103834672" target='_blank' >
+        <a
+          rel='noreferrer'
+          href='https://www.facebook.com/Marielis-112533103834672'
+          target='_blank'
+        >
           <i className='icon-facebook-square'></i>
           <p>marieli's</p>
         </a>
-        <a rel='noreferrer' href="https://www.instagram.com/ma_rielis/" target='_blank' >
+        <a
+          rel='noreferrer'
+          href='https://www.instagram.com/ma_rielis/'
+          target='_blank'
+        >
           <i className='icon-instagram'></i>
           <p>ma_rielis</p>
         </a>
-        <div><i className='icon-whatsapp'></i><p>981680869</p></div>
-        <div><i className='icon-envelope'></i><p>marieliscakess@gmail.com</p></div>
+        <a rel='noreferrer' href='https://wa.me/51981680869' target='_blank'>
+          <i className='icon-whatsapp'></i>
+          <p>981680869</p>
+        </a>
+        <div>
+          <i className='icon-envelope'></i>
+          <p>marieliscakess@gmail.com</p>
+        </div>
       </Links>
     </SocialMediaWrapper>
-  )
-}
+  );
+};

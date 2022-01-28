@@ -79,9 +79,12 @@ export const Carousel = () => {
         )}
       >
         {categories[category].map((e, i) => (
-          <SlideCarousel srcImgSlide={e.imgSrc}
+          <SlideCarousel
+            srcImgSlide={e.imgSrc}
             titleSlide={e.name}
-            descriptionSlide={{ ...e.description }} key={`slide-${category}-${i}`} />
+            descriptionSlide={{ ...e.description }}
+            key={`slide-${category}-${i}`}
+          />
         ))}
       </NukaCarousel>
     </CarouselWrapper>

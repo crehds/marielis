@@ -11,7 +11,7 @@ export const SlideDescriptionWrapper = styled.div`
   font-style: italic;
   font-weight: bold;
   font-size: 18px;
-  color: rgba(235,235,235,.85);
+  color: rgba(235, 235, 235, 0.85);
   > p:nth-child(1) {
     text-align: justify;
   }

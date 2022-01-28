@@ -1,12 +1,12 @@
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes } from 'styled-components';
 
 export const ArticleWrapper = styled.article`
   /* border: 1px solid white; */
   display: grid;
   grid-template-rows: 15em 1.5fr 3fr;
-  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.4);
   margin: 2px;
-`
+`;
 
 export const ArticleTitle = styled.div`
   color: rgba(235, 177, 213, 0.904);
@@ -17,7 +17,7 @@ export const ArticleTitle = styled.div`
   h3 {
     font-size: 2.5rem;
   }
-`
+`;
 const f = keyframes`
   from {
     clip-path:polygon(
@@ -29,7 +29,7 @@ const f = keyframes`
     0 50%,0 0,100% 0,100% 50%,/*1,2,3,4*/
     0 50%,0 100%,100% 100%,100% 50%);/*5,6,7,8*/  
   }
-`
+`;
 const opacity = keyframes`
   from {
     opacity: 0;
@@ -37,16 +37,16 @@ const opacity = keyframes`
   to {
     opacity: 1;
   }
-`
+`;
 
 export const ArticleParagraph = styled.p`
   color: white;
   text-align: justify;
   padding: 15px;
   font-family: 'Roboto';
-  animation: ${opacity} .6s linear 1;
+  animation: ${opacity} 0.6s linear 1;
   font-size: 1rem;
-`
+`;
 
 export const ArticleImg = styled.div`
   /* border: 1px solid black; */
@@ -58,4 +58,4 @@ export const ArticleImg = styled.div`
     position: relative;
     border-radius: 5px;
   }
-`
+`;

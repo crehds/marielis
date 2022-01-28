@@ -17,23 +17,22 @@ export const OptionCarousel = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 3px 1px rgba(2,2,2,.75);
+  box-shadow: 0 0 3px 1px rgba(2, 2, 2, 0.75);
   padding: 0px 2rem;
   font-weight: bold;
   border-radius: 10px;
-  transition: .5s;
+  transition: 0.5s;
   :hover {
     background: rgba(69, 247, 214, 0.65);
     color: rgba(240, 51, 127, 0.781);
   }
-  
+
   &&.active {
     background: rgba(69, 247, 214, 0.65);
     color: rgba(240, 51, 127, 0.781);
     border: 3px outset rgba(16, 32, 29, 0.9);
   }
   :active {
-      border: 3px solid rgba(45, 95, 86, 0.9);
-    }
-
+    border: 3px solid rgba(45, 95, 86, 0.9);
+  }
 `;
