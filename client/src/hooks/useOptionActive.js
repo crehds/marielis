@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export function useOptionActive(args) {
   const [optionActive, setOptionActive] = useState(args);
 
-  function handleOptionSelected(id) {
-    const optionSelected = document.getElementById(id);
+  const handleOptionSelected = useCallback(() => {
+    const optionSelected = document.getElementById(optionActive.option);
     const collection = document.getElementById(optionActive.navbar).childNodes;
 
     for (let i = 0; i < collection.length; i++) {
@@ -14,9 +14,10 @@ export function useOptionActive(args) {
     }
 
     optionSelected.classList.add('active');
-  }
+  }, [optionActive.option, optionActive.navbar]);
+
   useEffect(() => {
-    handleOptionSelected(optionActive.option);
-  }, [optionActive.option]);
+    handleOptionSelected();
+  }, [handleOptionSelected]);
   return [optionActive, setOptionActive];
 }
