@@ -6,6 +6,7 @@ import { useStateValue } from './Context';
 import { Products } from './pages/Products';
 import { AboutUs } from './pages/AboutUs';
 import { ContactUs } from './pages/ContactUs';
+import { Customers } from './pages/Customers';
 
 function handleContent(page) {
   switch (page) {
@@ -13,6 +14,8 @@ function handleContent(page) {
       return <Products />;
     case 'AboutUs':
       return <AboutUs />;
+    case 'Customers':
+      return <Customers />;
     case 'ContactUs':
       return <ContactUs />;
     default:
@@ -24,7 +27,7 @@ function App() {
   // eslint-disable-next-line no-empty-pattern
   const [state, {}] = useStateValue();
   return (
-    <div className='App'>
+    <div id='app' className='App'>
       <GlobalStyle />
       <NavBar />
       {handleContent(state.home)}

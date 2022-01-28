@@ -14,6 +14,9 @@ export const Options = (props) => {
       <Option onClick={clickOption} id='AboutUs'>
         Nosotros
       </Option>
+      <Option onClick={clickOption} id='Customers'>
+        Reseñas
+      </Option>
       <Option onClick={clickOption} id='ContactUs'>
         Contacto
       </Option>
