@@ -35,7 +35,7 @@ export const Option = styled.div`
     color: rgba(18, 18, 18, 0.85);
   }
   &&.active {
-    border: none;
+    border: transparent;
     background-image: linear-gradient(
       110.6deg,
       rgba(243, 134, 170, 0.698) 7%,

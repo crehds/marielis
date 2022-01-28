@@ -7,6 +7,7 @@ import { useOptionActive } from '../../hooks/useOptionActive';
 
 export const NavBar = () => {
   const [state, dispatch] = useStateValue();
+  // eslint-disable-next-line no-unused-vars
   const [option, setOption] = useOptionActive({
     navbar: 'navbar_home',
     option: state.home

@@ -21,6 +21,7 @@ function handleContent(page) {
 }
 
 function App() {
+  // eslint-disable-next-line no-empty-pattern
   const [state, {}] = useStateValue();
   return (
     <div className='App'>
