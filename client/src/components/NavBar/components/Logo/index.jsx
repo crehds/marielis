@@ -5,8 +5,9 @@ import logo from '../../../../assets/logo_resize_206_117-removebg-preview.png';
 export const Logo = () => {
   return (
     <Div>
-      <ImgWrapper>
-        <img src={logo} alt='logo de marielis' />
+      <ImgWrapper className='holder'>
+        <div id='photo-holder'></div>
+        <div id='preload'></div>
       </ImgWrapper>
       <NameLogoWrapper>
         <NameLogo>Marielis</NameLogo>

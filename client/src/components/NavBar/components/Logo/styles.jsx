@@ -12,6 +12,36 @@ export const Div = styled.div`
     rgba(31, 30, 30, 0.6) 35%,
     rgba(71, 70, 70, 0.8) 100%
   );
+  #preload {
+    display: none;
+  }
+  .holder {
+    position: relative;
+    border-radius: 50%;
+    width: 180px;
+    height: 130px;
+  }
+  #photo-holder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    /* border: 5px solid #ffffff; */
+    margin: 0px auto;
+    margin-left: 20%;
+    position: relative;
+    /* background-color: #ffffff; */
+    border-radius: 50%;
+
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 1); */
+  }
+  .section {
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+  }
 `;
 
 export const NameLogoWrapper = styled.div`
