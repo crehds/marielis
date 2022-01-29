@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavBar } from './components/NavBar';
+import { GlobalStyle } from './GlobalStyles';
+import { Footer } from './components/Footer';
+import { useStateValue } from './Context';
+import { Products } from './pages/Products';
+import { AboutUs } from './pages/AboutUs';
+import { ContactUs } from './pages/ContactUs';
+import { Customers } from './pages/Customers';
+
+function handleContent(page) {
+  switch (page) {
+    case 'Products':
+      return <Products />;
+    case 'AboutUs':
+      return <AboutUs />;
+    case 'Customers':
+      return <Customers />;
+    case 'ContactUs':
+      return <ContactUs />;
+    default:
+      break;
+  }
+}
 
 function App() {
+  // eslint-disable-next-line no-empty-pattern
+  const [state, {}] = useStateValue();
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Marielis
-        </a>
-      </header>
+    <div id='app' className='App'>
+      <GlobalStyle />
+      <NavBar />
+      {handleContent(state.home)}
+      <Footer />
     </div>
   );
 }
