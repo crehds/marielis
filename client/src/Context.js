@@ -3,7 +3,7 @@ import React, { createContext, useContext, useReducer } from 'react';
 const Context = createContext();
 
 let initialState = {
-  home: 'Customers'
+  home: 'Products'
 };
 
 const reducer = (state, action) => {

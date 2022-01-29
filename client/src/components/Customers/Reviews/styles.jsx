@@ -1,10 +1,8 @@
 import styled, { css } from 'styled-components';
 
 export const ReviewsWrapper = styled.div`
-  /* white-space: nowrap; */
   display: flex;
   flex-wrap: nowrap;
-  /* display: inline-block; */
   ${({ size }) =>
     css`
       max-width: ${size}px;
@@ -13,7 +11,7 @@ export const ReviewsWrapper = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 10px;
-  transform-origin: center left;
+
   &::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 4px;
@@ -36,57 +34,20 @@ export const ReviewsWrapper = styled.div`
     transform: scale(0.9);
   }
   :hover .client:hover {
-    transform: scaleX(0.8);
     opacity: 1;
-    position: relative;
-  }
-`;
-
-export const Review = styled.div`
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-  border: 1px solid green;
-  margin: 8px 10px;
-  box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.9);
-  transition: 450ms;
-  border-radius: 8px;
-  :hover ~ .client {
-    transform: scale(0.9) translate3d(1px, 0, 0);
-  }
-  ${({ size }) =>
-    css`
-      min-width: ${size / 2.5}px;
-      min-height: ${size / 4}px;
-    `}
-
-  :hover {
-    ${({ size }) =>
-      css`
-        min-width: ${size / 2.5 + 250}px;
-        padding-right: 30%;
-      `}
-    .clientContent {
-      right: -80%;
-      opacity: 1;
+    transform: scale(1);
+    :last-child {
+      transform: translate3d(-50%, 0, 0);
     }
   }
-  padding: 1.8rem 2.8rem;
-`;
-
-export const ReviewContent = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  img {
-    width: 100%;
-    height: 100%;
+  .client:nth-of-type(n) {
+    h3 {
+      color: rgba(62, 218, 171, 0.8);
+    }
   }
-  div {
-    transition: 0.8s;
-    position: absolute;
-    opacity: 0.2;
-    top: 0;
-    right: 0;
-    z-index: -1;
+  .client:nth-of-type(2n) {
+    h3 {
+      color: rgba(245, 81, 223, 0.8);
+    }
   }
 `;
