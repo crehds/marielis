@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "postcss": "^8.4.5"
+    "postcss": "^8.4.5",
+    "postcss-normalize": "^10.0.1"
   }
 }
